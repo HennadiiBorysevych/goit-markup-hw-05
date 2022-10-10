@@ -52,7 +52,8 @@ body{
 .link:focus{
     color: var(--accent-text-color) ;
     fill: var(--accent-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-box{
     display: flex;
@@ -559,6 +560,7 @@ height: 92px;
 .page:focus{
     fill: var(--accent-text-color);
     border: 1px solid var(--accent-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company{
     width: 100px;
