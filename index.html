@@ -62,7 +62,7 @@
       <section class="main-section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="order-btn">Замовити послугу</button>
+          <button class="order-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -120,38 +120,48 @@
           </ul>
         </div>
       </section>
+
       <section class="section padding">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list examples">
             <li class="flex-element">
-              <a href="#">
+              <a class="examples-link" href="#">
                 <img
                   src="./images/box-1.jpg"
                   alt="написання коду на айпеді"
                   width="370"
                   height="294"
                 />
+                <div class="pic-description">
+                  <h3 class="description-title">Десктопні додатки</h3>
+                </div>
               </a>
             </li>
             <li class="flex-element">
-              <a href="#">
+              <a class="examples-link" href="#">
                 <img
                   src="./images/box-2.jpg"
                   alt="шаблони меню телефону на пк"
                   width="370"
                   height="294"
                 />
+                <div class="pic-description">
+                  <h3 class="description-title">Мобільні додатки</h3>
+                </div>
               </a>
             </li>
             <li class="flex-element">
-              <a href="#">
+              <a class="examples-link" href="#">
                 <img
                   src="./images/box-3.jpg"
                   alt="кольорова гамма на планшеті"
                   width="370"
                   height="294"
                 />
+                <div class="pic-description">
+                  <h3 class="description-title">Дизайнерські рішення</h3>
+                </div>
               </a>
             </li>
           </ul>
@@ -458,5 +468,24 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-button" data-modal-close>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 11 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
