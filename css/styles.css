@@ -44,6 +44,7 @@ body{
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first-logo, 
 .logo:hover, 
@@ -52,6 +53,8 @@ body{
 .link:focus{
     color: var(--accent-text-color) ;
     fill: var(--accent-text-color);
+}
+.link{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -168,11 +171,13 @@ color: var(--btn-text-color);
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .order-btn:hover, 
 .order-btn:focus{
     background-color: var(--order-btn-active);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    
 }
 .backdrop{
     position: fixed;
@@ -229,6 +234,10 @@ color: var(--btn-text-color);
     border: none;
     outline: none;
     border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter{
     display: flex;
@@ -298,9 +307,7 @@ color: var(--btn-text-color);
     color: var(--btn-text-color);
     background-color: var(--accent-text-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    filter 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    
 }
 .section{
     padding-top: 94px;
@@ -529,6 +536,8 @@ color: var(--btn-text-color);
     align-items: center;
     border-radius: 50%;
     fill:var(--social-links-fill);
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .site:hover,
@@ -536,7 +545,7 @@ color: var(--btn-text-color);
     background-color: var(--order-btn-active);
     fill: var(--btn-text-color);
     outline: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .clients{
     display: flex;
@@ -555,12 +564,13 @@ height: 92px;
     fill: var(--social-links-fill);
     border-radius: 4px;
     border: 1px solid var(--social-links-fill) ;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page:hover,
 .page:focus{
     fill: var(--accent-text-color);
     border: 1px solid var(--accent-text-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .company{
     width: 100px;
